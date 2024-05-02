@@ -1,4 +1,5 @@
 opencv-python
 cvzone
-paho-mqtt
 mediapipe
+firebase-admin
+paho-mqtt==1.5.0
