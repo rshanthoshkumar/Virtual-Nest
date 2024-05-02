@@ -20,9 +20,9 @@ try:
         for button in bl:
             # Load the appropriate image based on button text
             if button.text == "ON":
-                img = cv2.imread(r"D:\VIT\coding\python\ML\green.png", cv2.IMREAD_UNCHANGED)
+                img = cv2.imread(r"green.png", cv2.IMREAD_UNCHANGED)
             elif button.text == "OFF":
-                img = cv2.imread(r"D:\VIT\coding\python\ML\red.png", cv2.IMREAD_UNCHANGED)
+                img = cv2.imread(r"red.png", cv2.IMREAD_UNCHANGED)
             # Resize the image to make it 250x250
             img = cv2.resize(img, (250, 250))
 
@@ -42,7 +42,7 @@ try:
     def pressed(button):
         global data
 
-        img = cv2.imread(r"D:\VIT\coding\python\ML\blue.png", cv2.IMREAD_UNCHANGED)
+        img = cv2.imread(r"blue.png", cv2.IMREAD_UNCHANGED)
         img = cv2.resize(img, (250, 250))
         alpha = img[:, :, 3]
         for c in range(0, 3):
